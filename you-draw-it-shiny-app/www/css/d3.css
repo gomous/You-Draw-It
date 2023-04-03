@@ -1,0 +1,5 @@
+.axis-grid line {
+stroke: lightgrey !important;
+      stroke-opacity: 0.5;
+      shape-rendering: crispEdges;
+}
