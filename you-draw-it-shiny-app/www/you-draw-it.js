@@ -266,6 +266,10 @@ function draw_rectangle({ svg, drawable_points, line_data, draw_start, width, he
     //.style("fill", "#e0f3f3")
     .style("fill-opacity", 0.4)
     .style("fill", "rgba(255,99,71,.8)")
+  //              ^
+  //              |
+  //              |
+  // This line needs to be changed
 
 }
 
