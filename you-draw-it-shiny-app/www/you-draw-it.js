@@ -100,6 +100,7 @@ function start_drawer(state, reset = true) {
     // start with the svg object provided by r2d3
     // multiassign where setup_drawable_points is grabbing the parameters it needs from state: data, freedraw and draw_start
     state.drawable_points = setup_drawable_points(state);
+
   }
 
   // if we have points, we draw user's line.
@@ -265,7 +266,7 @@ function draw_rectangle({ svg, drawable_points, line_data, draw_start, width, he
     .attr("height", state.h)
     //.style("fill", "#e0f3f3")
     .style("fill-opacity", 0.4)
-    .style("fill", "rgba(255,255,0,.9)")
+    .style("fill", "rgba(255,100,45,.9)")
   //              ^
   //              |
   //              |
@@ -290,7 +291,13 @@ function draw_user_line(state, scales) {
     .at(default_line_attrs)
     .attr('stroke', drawn_line_color)
     .attr("d", scales.line_drawer)
-    .style("stroke-dasharray", ("1, 7"));
+    .style("stroke-dasharray", ("15,7,7,13"));
+  //             ^
+  //             |
+  //             |
+  //             |
+  // This line changes the dotted line to dashed line
+
 }
 
 function draw_finished_line({ svg, line_data, draw_start, free_draw }, scales) {
