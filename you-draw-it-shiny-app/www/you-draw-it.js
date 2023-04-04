@@ -297,6 +297,7 @@ function draw_user_line(state, scales) {
   //             |
   //             |
   // This line changes the dotted line to dashed line
+  // This completes the easy task
 
 }
 
