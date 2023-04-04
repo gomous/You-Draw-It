@@ -1,4 +1,4 @@
-# 'You Draw It' -- Easy
+# 'You Draw It' -- Medium
  
  **Summary:** Simple RShiny application example for the 'You Draw It' feature.
  
